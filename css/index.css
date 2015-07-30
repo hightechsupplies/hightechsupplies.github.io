@@ -50,9 +50,9 @@ section
     overflow:hidden;
 }
 
-section img
+section img.map, section map area
 {
-    
+    outline: none;
 }
 
 section p
