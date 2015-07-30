@@ -1,0 +1,30 @@
+.input-formulario
+{
+    width:500px;
+    max-width:500px;
+    margin-right:50px;
+    display: inline-block;
+}
+
+.form-group
+{
+    
+    text-align:right;
+}
+
+.form-group label
+{
+    float:left;
+    margin-left: 20px;
+}
+
+#buttons
+{
+    text-align:right;
+    margin: 40px 50px;
+}
+
+#buttons > *
+{
+    margin-left:10px;
+}

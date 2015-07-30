@@ -3,19 +3,19 @@ body
 {	font-family:arial, tahoma, helvetica;
 	margin: 0px auto;
 	z-index:-10;
-    background:white;
+    background:#eee;
 }
 
 #contenedor
 {
     min-height: 100%;
-  position: relative;
+    position: relative;
 }
 
 .centrador
 {
     width:100%;
-    min-width:700px;
+    min-width:770px;
     max-width:1000px;
     margin:0px auto;
 }
@@ -29,6 +29,18 @@ body
     height:27px;
     padding:0px 20px;
     border-bottom: 3px solid #191919;
+}
+
+#barra-idioma a
+{
+    text-decoration: none;
+    color:white;
+    margin-right: 5px;
+}
+
+#barra-idioma a:hover
+{
+    text-decoration: underline;
 }
 
 header
@@ -47,7 +59,7 @@ header > div
 section
 {	
 	height:100%;
-    padding-bottom: 140px;
+    padding:5px 20px 140px 20px;
 }
 
 nav
@@ -110,7 +122,7 @@ nav li.info
     border-radius: 0px !important;
     margin-top: 0px;
     transition: all 1s;
-    width:250px
+    min-width:230px;
 }
 
 .menu a

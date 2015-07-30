@@ -1,87 +1,45 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Produtek</title>
+		<title>High Tech Supplies</title>
 		<meta name="author" content="Jesusangel Jimenez">
     <meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/angular.min.js"></script>
     <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/index.js"></script>
 	</head>
-	<body>
+	<body ng-app="hightech">
         <div id="contenedor">
             <div id="barra-idioma">
-                <div class="centrador">
-                    <img src="imagenes/es.gif">Español 
-                    <img src="imagenes/us.gif">Ingles
-                </div>
             </div>
             <header>
                 <div class="centrador">
                     <img id="logo" src="imagenes/logo.png">
                 </div>
             </header>
-            <nav>
-                <div class="centrador">
-                    <ul class="nav">
-                        <li><a href="#" class="active">Inicio</a></li>
-                        <li class="dropdown">
-                          <a id="productos" class="dropdown-toggle" data-toggle="dropdown" data-target="#" role="button" aria-haspopup="true" aria-expanded="false">Productos <span class="caret"></span></a>
-                          <ul class="dropdown-menu menu" aria-labelledby="productos">
-                            <li class="dropdown-header">Cables</li>
-                            <li><a href="#">cable largo</a></li>
-                            <li><a href="#">cable alto</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Maquinas de soldar</li>
-                            <li><a href="#">maquina roja</a></li>
-                            <li><a href="#">maquina azul</a></li>
-                            <li class="dropdown-submenu"><a href="#" tabindex="-1">otras maquinas</a>
-                                <ul class="dropdown-menu menu">
-                                    <li><a href="#">maquina verde</a></li>
-                                    <li><a href="#">maquina morada</a></li>
-                                    <li class="dropdown-submenu"><a href="#" tabindex="-1">otras cosas</a>
-                                        <ul class="dropdown-menu menu">
-                                            <li><a href="#">cosa 1</a></li>
-                                            <li><a href="#">cosa 2</a></li>
-                                        </ul>  
-                                    </li>
-                                </ul>  
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Quienes Somos</a></li>
-                        <li class="info"><span>Toll Free: 1-866-263-8457</span></li>
-                    </ul>
-                </div>
-            </nav>
             <section>
                 <div class="centrador">
-                    <div id="izquierda">
-                        <div id="fader2"></div>
-                        <div class="bolita"></div>
-                        <div class="bolita"></div>
-                        <div class="bolita"></div>
-                        <div class="bolita"></div>
-                        <div class="bolita"></div>
-                        <div class="bolita"></div>
-                    </div>
-                    <div id="derecha">
-                        <div id="fader1"></div>                        
-                    </div>
-                    <div id="centro">
-                        <div class="checkea">
-                            <h4><span>Check</span> our best selling products</h4>
-                        </div>
-                        <div id="slider">
-                            <div id="fotos">
-                            
-                            </div>
-                        </div>
-                    </div>
+                    <p><b>Choose Your Region:</b><br/>
+                    <a href="/home.html" class="north">North America</a> | <a href="#" class="central">Central America</a> | <a href="#" class="south">South America</a></p>
+
+                    <img id="map" src="imagenes/mapas/worldmap.jpg" alt="map" usemap="#mapa">
+                    <map name="mapa">
+                        <area class="north" shape="rect" coords="160,0,410,45" alt="north" href="/home.html">
+                        <area class="north" shape="rect" coords="0,35,350,85" alt="north" href="/home.html">
+                        <area class="north" shape="rect" coords="80,85,290,125" alt="north" href="/home.html">
+                        <area class="north" shape="rect" coords="70,125,230,165" alt="north" href="/home.html">
+                        <area class="north" shape="rect" coords="120,165,190,185" alt="north" href="/home.html">
+                        <area class="central" shape="rect" coords="140,205,188,245" alt="central" href="#">
+                        <area class="central" shape="rect" coords="165,185,250,225" alt="central" href="#">
+                        <area class="south" shape="rect" coords="188,225,270,255" alt="central" href="#">
+                        <area class="south" shape="rect" coords="170,255,325,315" alt="central" href="#">
+                        <area class="south" shape="rect" coords="190,315,310,350" alt="central" href="#">
+                        <area class="south" shape="rect" coords="212,350,285,455" alt="central" href="#">
+                    </map>
                 </div>
             </section>
             <footer>
@@ -93,7 +51,7 @@
                         <p><b>Address:</b><br>
                         12601 N.W. 115th AVE<br>
                         BLDG. A, UNIT 114<br>
-                        MEDLEY, FL 3317</p>
+                        MEDLEY, FL 33178</p>
                     </div>
                     <div class="contacto">
                         <p><b>Phone:</b> (305) 822-4077<br>
@@ -103,7 +61,7 @@
                     <div class="contacto">
                         <p><b>General info:</b> <a href="mailto:info@hightech-ndt.com" target="_blank">info@hightech-ndt.com</a><br>
                         <b>Sales:</b> <a href="mailto:sales@hightech-ndt.com" target="_blank">sales@hightech-ndt.com</a><br>
-                            <b>Support:</b> <a href="mailto:support@hightech-ndt.com" target="_blank">support@hightech-ndt.com</a></p>
+                        <b>Support:</b> <a href="mailto:support@hightech-ndt.com" target="_blank">support@hightech-ndt.com</a></p>
                     </div>
                 </div>
             </footer>
