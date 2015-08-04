@@ -25,11 +25,16 @@ body
 {
     background: #3E3E3E;
     color:white;
-    text-align: right;
     height:27px;
     padding:0px 20px;
     border-bottom: 3px solid #191919;
 }
+
+#barra-idioma .region
+{   float:left;}
+
+#barra-idioma .idiomas
+{   float:right;}
 
 #barra-idioma a
 {
