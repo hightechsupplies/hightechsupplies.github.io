@@ -131,7 +131,7 @@ section
 
 .productos a
 {
-    font-size: 18px;
+    font-size: 15px;
     width:100%;
     color:#014d96;
     padding:10px;
@@ -142,6 +142,7 @@ section
 {
     padding-bottom:0px;
     border-top: 1px solid #ddd;
+    text-align: left;
 }
 
 .cantidad
@@ -203,6 +204,7 @@ div.paginador
 {
     border:1px solid #ccc !important;
     color:#014d96 !important;
+    background:white;
 }
 
 .pag-black a:hover
