@@ -24,7 +24,6 @@ body
 #barra-idioma
 {
     background: #3E3E3E;
-    color:white;
     height:27px;
     padding:0px 20px;
     border-bottom: 3px solid #191919;
@@ -39,13 +38,13 @@ body
 #barra-idioma a
 {
     text-decoration: none;
-    color:white;
+    color:#999;
     margin-right: 5px;
 }
 
 #barra-idioma a:hover
 {
-    text-decoration: underline;
+    text-shadow: 0px 0px 1px #999;
 }
 
 header
@@ -64,25 +63,22 @@ header > div
 section
 {	
 	height:100%;
-    padding:5px 20px 140px 20px;
+    padding:0px 20px 140px 20px;
 }
 
 nav
 {
     background:black;
-    padding: 0px 20px 10px 20px;
-    border-bottom: 5px solid #323232;
+    border-bottom: 5px solid #111;
 }
 
 nav > div
 {
     background:#323232;
-    border-radius: 10px;
 }
 
 nav > div > ul
 {
-    padding: 5px 0px;
     margin: 0px 12px;
     display:block;
 }
@@ -90,7 +86,6 @@ nav > div > ul
 nav > div > ul > li
 {
     float:left;
-    margin: 0px 4px;
 }
 
 nav > div > ul > li > a
@@ -117,6 +112,7 @@ nav li.info
     color:white;
     padding:3px;
     font-size: 18px;
+    padding:5px 0px;
 }
 
 .menu

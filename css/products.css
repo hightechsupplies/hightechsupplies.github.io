@@ -1,8 +1,7 @@
 section
 {
-    max-width: 1250px;
     width:100%;
-    margin:0px auto;
+    max-width: 1750px;
     padding-left:0px;
 }
 
@@ -32,7 +31,7 @@ section
     cursor:pointer;
 }
 
-@media (max-width:915px)
+@media (max-width:805px)
 {
     .buscador
     {
@@ -40,20 +39,21 @@ section
     }
 }
 
+
 #izquierda
 {
     width:200px;
-    padding:10px;
-    background:#ccc;
-    height:800px;
+    padding:20px 10px;
+    background:#ddd;
+    min-height:400px;
     display: inline-block;
     vertical-align: top;
+    font-size: 13px;
 }
 
 #derecha
 {
-    width:76%;
-    max-width: 1000px;
+    width:84%;
     display: inline-block;
     vertical-align: top;
 }
@@ -65,9 +65,46 @@ section
     vertical-align: top;
 }
 
+#pbar
+{
+    padding:10px;
+    width:100%;
+    border-bottom: 1px solid #999;
+}
+
+#pbar > div:first-child
+{
+    width:53%;
+    display: inline-block;
+}
+
+#pbar > div:nth-child(2)
+{
+    width:46%;
+    display: inline-block;
+    text-align: right;
+}
+
+#pbar > div:nth-child(2) a
+{
+    margin:0px 5px;
+}
+
+#pbar a
+{
+    color:#014d96;
+}
+
+#pbar a:hover, .productos a:hover
+{
+    text-decoration: none;
+    color:#1e78b1;
+}
+
 .productos
 {
-    width:22%;
+    width:17%;
+    max-width:300px;
     margin:1%;
     min-height:150px;
     text-align: center;
@@ -75,18 +112,13 @@ section
     background:white;
     vertical-align: top;
     border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .productos:hover
 {
     box-shadow: 0px 0px 10px #bbb;
 
-}
-
-.productos a:hover
-{
-    text-decoration: none;
-    color:#1e78b1;
 }
 
 .productos img
@@ -100,18 +132,150 @@ section
 .productos a
 {
     font-size: 18px;
+    width:100%;
     color:#014d96;
-    margin:10px;
+    padding:10px;
     display: inline-block;
 }
 
-hr
+.productos a:nth-child(2)
+{
+    padding-bottom:0px;
+    border-top: 1px solid #ddd;
+}
+
+.cantidad
+{
+    height:25px;
+    width:45px;
+    padding:0px 1px;
+    text-align: center;
+    display:inline-block;
+    margin:10px 2px;
+}
+
+.quote
+{
+    display:inline-block;
+    padding:0px 5px;
+    height:25px;
+    margin:10px 2px;
+    color:white;
+    background:#1e78b1;
+    vertical-align: top;
+}
+
+.quote:hover
+{
+    color:white;
+    background:#014d96;
+}
+
+hr.hrizq
+{
+    height: 1px !important;
+    background:#999;
+    border-top:none;
+}
+
+hr.tres, hr.cuatro, hr.cinco
 {
     height: 1px !important;
     background:#ccc;
+    border-top:none;
 }
 
-@media (max-width:915px)
+hr.tres, hr.cuatro
+{
+    display:none;
+}
+
+hr.cinco
+{
+    display:block;
+}
+div.paginador
+{
+    text-align:center;
+}
+
+.pag-black a
+{
+    border:1px solid #ccc !important;
+    color:#014d96 !important;
+}
+
+.pag-black a:hover
+{
+    background:#ccc !important;
+    color:#014d96 !important;
+}
+
+.pag-black li.active a
+{
+    background:#014d96 !important;
+    border:1px solid #014d96 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.pag-black li.disabled a
+{
+    color: #888 !important;
+}
+
+.up
+{
+    float: right;
+}
+
+@media (max-width:1320px)
+{
+    hr.tres, hr.cinco
+    {
+        display:none;
+    }
+
+    hr.cuatro
+    {
+        display:block;
+    }
+    
+    .productos
+    {
+        width:22%;
+    }
+    
+    #derecha
+    {
+        width:80%;
+    }
+}
+
+@media (max-width:1100px)
+{
+    hr.cuatro, hr.cinco
+    {
+        display:none;
+    }
+
+    hr.tres
+    {
+        display:block;
+    }
+    
+    .productos
+    {
+        width:30%;
+    }
+    
+    #derecha
+    {
+        width:76%;
+    }
+}
+
+@media (max-width:890px)
 {
     #izquierda
     {
