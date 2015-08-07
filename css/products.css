@@ -5,41 +5,6 @@ section
     padding-left:0px;
 }
 
-.input-buscador
-{
-    height:26px !important;
-}
-
-.buscador
-{
-    width:300px;
-}
-
-.buscador img
-{
-    height: 18px;
-}
-
-.buscador span
-{
-    padding:0px 6px;
-}
-
-.buscador span:hover
-{
-    background:#ccc;
-    cursor:pointer;
-}
-
-@media (max-width:805px)
-{
-    .buscador
-    {
-        width:200px;
-    }
-}
-
-
 #izquierda
 {
     width:200px;
@@ -198,32 +163,6 @@ hr.cinco
 div.paginador
 {
     text-align:center;
-}
-
-.pag-black a
-{
-    border:1px solid #ccc !important;
-    color:#014d96 !important;
-    background:white;
-}
-
-.pag-black a:hover
-{
-    background:#ccc !important;
-    color:#014d96 !important;
-}
-
-.pag-black li.active a
-{
-    background:#014d96 !important;
-    border:1px solid #014d96 !important;
-    color: white !important;
-    font-weight: bold;
-}
-
-.pag-black li.disabled a
-{
-    color: #888 !important;
 }
 
 .up

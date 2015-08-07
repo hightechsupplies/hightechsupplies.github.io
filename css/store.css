@@ -1,0 +1,59 @@
+.input-buscador
+{
+    height:26px !important;
+}
+
+.buscador
+{
+    width:300px;
+}
+
+.buscador img
+{
+    height: 18px;
+}
+
+.buscador span
+{
+    padding:0px 6px;
+}
+
+.buscador span:hover
+{
+    background:#ccc;
+    cursor:pointer;
+}
+
+@media (max-width:805px)
+{
+    .buscador
+    {
+        width:200px;
+    }
+}
+
+.pag-white a, .btn-white
+{
+    border:1px solid #ccc !important;
+    color:#014d96 !important;
+    background:white;
+}
+
+.pag-white a:hover, .btn-white:hover
+{
+    background:#ccc !important;
+    color:#014d96 !important;
+}
+
+.pag-white li.active a
+{
+    background:#014d96 !important;
+    border:1px solid #014d96 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.pag-white li.disabled a
+{
+    color: #888 !important;
+}

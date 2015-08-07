@@ -1,0 +1,136 @@
+#pbar
+{
+    padding:10px;
+    margin-bottom: 20px;
+    width:100%;
+    border-bottom: 1px solid #999;
+}
+
+#pbar > div:first-child
+{
+    width:53%;
+    display: inline-block;
+}
+
+#pbar > div:nth-child(2)
+{
+    width:46%;
+    display: inline-block;
+    text-align: right;
+}
+
+#pbar > div:nth-child(2) a
+{
+    margin:0px 5px;
+}
+
+#pbar a
+{
+    color:#014d96;
+}
+
+#pbar a:hover
+{
+    text-decoration: none;
+    color:#1e78b1;
+}
+
+.product
+{
+    margin-top:10px;
+}
+
+.cont-imgs
+{
+    width:70px;
+    height:420px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.cont-img-small
+{
+    width:66px;
+    height:66px;
+    margin:2px;
+    background: white;
+    text-align: center;
+    border: 1px solid #ddd;
+    display:inline-block;
+}
+
+.cont-img-big
+{
+    width:420px;
+    height:420px;
+    background: white;
+    text-align: center;
+    border: 1px solid #ddd;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.image
+{
+    max-width:100%;
+    height:auto;
+}
+
+.cont-info
+{
+    width:45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left:20px;
+}
+
+.cont-info > h2
+{
+    margin-top:0;
+    margin-bottom: 20px;
+}
+
+.cont-info > div
+{
+    text-align: center;
+    background: #ccc;
+    padding: 10px;
+    height:345px;
+}
+
+.cont-info > div > p:first-child
+{
+    text-align: justify;
+}
+
+.cantidad
+{
+    width:55px;
+    padding:0px 1px;
+    text-align: center;
+    display:inline-block;
+    margin:5px 2px;
+    font-size: 16px;
+}
+
+.quote
+{
+    display:inline-block;
+    margin:5px 2px;
+    color:white;
+    background:#1e78b1;
+    vertical-align: top;
+}
+
+.quote:hover
+{
+    color:white;
+    background:#014d96;
+}
+
+hr
+{
+    height: 1px !important;
+    background:#ccc;
+    border-top:none;
+}
