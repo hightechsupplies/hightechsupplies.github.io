@@ -24,7 +24,7 @@ body
 #barra-idioma
 {
     background: #3E3E3E;
-    height:27px;
+    height:22px;
     padding:0px 20px;
     border-bottom: 3px solid #191919;
 }
@@ -38,13 +38,13 @@ body
 #barra-idioma a
 {
     text-decoration: none;
-    color:#999;
-    margin-right: 5px;
+    color:#eee;
+    margin-right: 25px;
 }
 
 #barra-idioma a:hover
 {
-    text-shadow: 0px 0px 1px #999;
+    text-shadow: 0px 0px 1px #eee;
 }
 
 header
@@ -68,19 +68,26 @@ section
 
 nav
 {
-    background:black;
-    border-bottom: 5px solid #111;
-}
-
-nav > div
-{
-    background:#323232;
+    background:#111;
+    text-align: right;
+    height: 70px;
 }
 
 nav > div > ul
 {
     margin: 0px 12px;
-    display:block;
+    display:inline-block;
+    text-align: right;
+}
+
+nav > div .logo
+{
+    float:left;
+}
+
+nav > div .logo img
+{
+    height: 70px;
 }
 
 nav > div > ul > li
@@ -91,19 +98,25 @@ nav > div > ul > li
 nav > div > ul > li > a
 {
     font-weight: bold;
-    color: #999;
+    color: #eee;
+    padding-top:25px !important;
+    padding-bottom:25px !important;
 }
 
 nav > div > ul > li:hover > a, nav > div > ul > li > a:active, nav > ul > li > a:visited
 {   
-    color:#323232;
-    background:linear-gradient(white,#bbb);
+    color:#0e9bd7;
+    background:#222 !important;
+    transition: background 0.2s;
 }
 
 nav .active
 {   
     color:#0e9bd7;
-    background:linear-gradient(#222,#111);
+    background:#333 !important;
+    padding-top: 22px !important;
+    border-top-color: #0e9bd7;
+    border-top: 3px solid;
 }
 
 nav li.info
@@ -117,9 +130,9 @@ nav li.info
 
 .menu
 {
-    background:rgba(50,50,50,0.97);
+    background:rgba(27,27,27,0.97);
     color:white;
-    border: 1px solid #222;
+    border: 0px;
     border-radius: 0px !important;
     margin-top: 0px;
     transition: all 1s;
@@ -130,12 +143,13 @@ nav li.info
 {
     font-weight: bold;
     color:white !important;
+    padding:7px 20px !important;
 }
 
 .menu li:hover > a
 {
-    background:linear-gradient(white,#bbb);;
-    color:black !important;
+    background:inherit;
+    color:#0e9bd7 !important;
 }
 
 .menu .divider
