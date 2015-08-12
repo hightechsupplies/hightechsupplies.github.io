@@ -20,6 +20,7 @@ body
     margin:0px auto;
 }
 
+/*
 #barra-idioma
 {
     background: #3E3E3E;
@@ -37,7 +38,7 @@ body
 #barra-idioma a
 {
     text-decoration: none;
-    color:#eee;
+    color:#ddd;
     margin-right: 25px;
 }
 
@@ -45,7 +46,9 @@ body
 {
     text-shadow: 0px 0px 1px #eee;
 }
+*/
 
+/*
 header
 {
 	box-shadow:none;
@@ -57,6 +60,33 @@ header > div
 {
     width:400px;
     overflow:hidden;
+}
+*/
+
+header
+{
+    background: #3E3E3E;
+    height:22px;
+    padding:0px 20px;
+    border-bottom: 3px solid #191919;
+}
+
+header .region
+{   float:left;}
+
+header .idiomas
+{   float:right;}
+
+header a
+{
+    text-decoration: none;
+    color:#ddd;
+    margin-right: 25px;
+}
+
+header a:hover
+{
+    text-shadow: 0px 0px 1px #eee;
 }
 
 section
@@ -97,7 +127,7 @@ nav > div > ul > li
 nav > div > ul > li > a
 {
     font-weight: bold;
-    color: #eee;
+    color: #ddd;
     padding-top:25px !important;
     padding-bottom:25px !important;
 }
@@ -174,7 +204,6 @@ footer
     left: 0;
 }
 
-
 footer #contacto
 {
     text-align: left;
@@ -192,37 +221,30 @@ footer .contacto
     display:inline-block;
     font-size: small;
     text-align: left;
-    vertical-align: top;
+    vertical-align: middle;
     margin-top:15px;
 }
 
 footer .contacto p
 {
     margin:10px 15px 10px 15px;
+    color: #ddd;
 }
 
 footer .contacto > div:first-child
 {
-    height:90px;
+    height:100px;
     width:1px;
-    background:linear-gradient(white,#014d96);
+    background:linear-gradient(#1e78b1,#014d96);
     display: inline-block;
     float:left;
 }
 
-footer .contacto > div:nth-of-type(2)
-{
-    height:90px;
-    width:1px;
-    background:linear-gradient(white,#014d96);
-    display: inline-block;
-    float:right;
-}
 
 footer .contacto a
 {
     text-decoration: none;
-    color: inherit;
+    color: #ddd;
 }
 
 footer .contacto a:hover
