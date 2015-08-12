@@ -15,7 +15,7 @@ body
 .centrador
 {
     width:100%;
-    min-width:810px;
+    min-width:820px;
     max-width:1000px;
     margin:0px auto;
 }
@@ -87,6 +87,8 @@ header a
 header a:hover
 {
     text-shadow: 0px 0px 1px #eee;
+    text-decoration: none;
+    color:#ddd;
 }
 
 section
@@ -172,7 +174,7 @@ nav li.info
 {
     font-weight: bold;
     color:white !important;
-    padding:7px 20px !important;
+    padding:6px 20px !important;
 }
 
 .menu li:hover > a
@@ -202,6 +204,7 @@ footer
     position: absolute;
     bottom: 0;
     left: 0;
+    text-align: left;
 }
 
 footer #contacto
@@ -221,7 +224,7 @@ footer .contacto
     display:inline-block;
     font-size: small;
     text-align: left;
-    vertical-align: middle;
+    vertical-align: top;
     margin-top:15px;
 }
 
@@ -231,13 +234,23 @@ footer .contacto p
     color: #ddd;
 }
 
-footer .contacto > div:first-child
+footer .contacto > div
 {
-    height:100px;
+    height:75px;
     width:1px;
     background:linear-gradient(#1e78b1,#014d96);
     display: inline-block;
     float:left;
+}
+
+footer .contacto:nth-child(2) > div
+{
+    height:105px;
+}
+
+footer .contacto:nth-child(3) > div
+{
+    height:90px;
 }
 
 
