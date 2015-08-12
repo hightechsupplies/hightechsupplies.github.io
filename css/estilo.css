@@ -205,7 +205,7 @@ footer .contacto > div:first-child
 {
     height:90px;
     width:1px;
-    background:linear-gradient(#1e78b1,#014d96);
+    background:linear-gradient(white,#014d96);
     display: inline-block;
     float:left;
 }
@@ -214,7 +214,7 @@ footer .contacto > div:nth-of-type(2)
 {
     height:90px;
     width:1px;
-    background:linear-gradient(#1e78b1,#014d96);
+    background:linear-gradient(white,#014d96);
     display: inline-block;
     float:right;
 }
