@@ -15,11 +15,10 @@ body
 .centrador
 {
     width:100%;
-    min-width:770px;
+    min-width:810px;
     max-width:1000px;
     margin:0px auto;
 }
-
 
 #barra-idioma
 {
@@ -164,7 +163,7 @@ nav li.info
 
 footer
 {	
-    text-align:center;
+
     color:white;
     width:100%;
     height:140px;
@@ -193,35 +192,40 @@ footer .contacto
     display:inline-block;
     font-size: small;
     text-align: left;
-    height: 75px;
     vertical-align: top;
+    margin-top:15px;
+}
+
+footer .contacto p
+{
+    margin:10px 15px 10px 15px;
+}
+
+footer .contacto > div:first-child
+{
+    height:90px;
+    width:1px;
+    background:linear-gradient(#1e78b1,#014d96);
+    display: inline-block;
+    float:left;
+}
+
+footer .contacto > div:nth-of-type(2)
+{
+    height:90px;
+    width:1px;
+    background:linear-gradient(#1e78b1,#014d96);
+    display: inline-block;
+    float:right;
 }
 
 footer .contacto a
 {
     text-decoration: none;
-    font-weight: bold;
-    color: #A2D5F9;
+    color: inherit;
 }
 
 footer .contacto a:hover
 {
-    text-decoration: underline;
-}
-
-footer .contacto:nth-of-type(2)
-{
-    width:180px;
-}
-
-footer .contacto:nth-of-type(3)
-{
-    margin-top:10px;
-    width:200px;
-}
-
-footer .contacto:nth-of-type(4)
-{
-    margin-top:10px;
-    width:300px;
+    color: #A2D5F9;
 }

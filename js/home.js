@@ -16,6 +16,13 @@ preload(
     "imagenes/fader1/fader2.jpg",
     "imagenes/fader1/fader3.jpg",
     "imagenes/fader1/fader4.jpg",
+    "imagenes/fader1/fader5.jpg",
+    "imagenes/fader1/fader6.jpg",
+    "imagenes/fader1/fader7.jpg",
+    "imagenes/fader1/fader8.jpg",
+    "imagenes/fader1/fader9.jpg",
+    "imagenes/fader1/fader10.jpg",
+    "imagenes/fader1/fader11.jpg",
     "imagenes/fader2/left1.jpg",
     "imagenes/fader2/left2.jpg",
     "imagenes/fader2/left3.jpg",
@@ -29,7 +36,7 @@ $(document).ready(function(){
     function temporizador1(){
         $("#fader1").css("background-image","url(imagenes/fader1/fader"+fader1+".jpg)");
         fader1++;
-        if (fader1 > 4){fader1 = 1;}
+        if (fader1 > 10){fader1 = 1;}
     }
     
     function temporizador2(){

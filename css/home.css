@@ -9,8 +9,9 @@
 
 #derecha
 {
-    width:70%;
-    height: 330px;
+    width:100%;
+    margin:0 auto;
+    height: 460px;
     margin-top:10px;
     display:inline-block;
     vertical-align: top;
@@ -41,8 +42,9 @@
 
 #fader1, #fader2
 {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0px auto;
     transition: background 1s ease-in;
     background-size: contain;
     background-repeat: no-repeat;
