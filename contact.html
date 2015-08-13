@@ -16,25 +16,21 @@
 	</head>
 	<body ng-app="hightech">
         <div id="contenedor">
-            <div id="barra-idioma">
+            <header>
                 <div class="centrador">
                     <div class="region">
                         <a href="index.html">Select Region</a>
                     </div>
                     <div class="idiomas">
-                        <img src="imagenes/us.gif"><a href="#">English</a>
-                        <img src="imagenes/es.gif"><a href="#">Español</a>
+                        <a href="#">English</a>
+                        <a href="#">Español</a>
                     </div>
-                </div>
-            </div>
-            <header>
-                <div class="centrador">
-                    <a href="home.html"><img id="logo" src="imagenes/logo.png"></a>
                 </div>
             </header>
             <nav>
-                <div>
-                    <ul class="nav centrador">
+                <div class="centrador">
+                    <a href="home.html" class="logo"><img id="logo" src="imagenes/logon.png"></a>
+                    <ul class="nav ">
                         <li><a href="home.html">Home</a></li>
                         <li class="dropdown">
                           <a href="products.html">Products<span class="caret"></span></a>
@@ -43,7 +39,6 @@
                         <li><a href="quote.html">Get a quote</a></li>
                         <li><a href="about.html">About us</a></li>
                         <li><a href="#" class="active">Contact us</a></li>
-                        <li class="info"><span>Toll Free: 1-866-263-8457</span></li>
                     </ul>
                 </div>
             </nav>

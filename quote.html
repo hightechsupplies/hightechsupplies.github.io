@@ -15,25 +15,21 @@
 	</head>
 	<body ng-app="hightech">
         <div id="contenedor">
-            <div id="barra-idioma">
+            <header>
                 <div class="centrador">
                     <div class="region">
                         <a href="index.html">Select Region</a>
                     </div>
                     <div class="idiomas">
-                        <img src="imagenes/us.gif"><a href="#">English</a>
-                        <img src="imagenes/es.gif"><a href="#">Español</a>
+                        <a href="#">English</a>
+                        <a href="#">Español</a>
                     </div>
-                </div>
-            </div>
-            <header>
-                <div class="centrador">
-                    <a href="home.html"><img id="logo" src="imagenes/logo.png"></a>
                 </div>
             </header>
             <nav>
-                <div>
-                    <ul class="nav centrador">
+                <div class="centrador">
+                    <a href="home.html" class="logo"><img id="logo" src="imagenes/logon.png"></a>
+                    <ul class="nav ">
                         <li><a href="home.html">Home</a></li>
                         <li class="dropdown">
                           <a href="products.html">Products<span class="caret"></span></a>
@@ -42,7 +38,6 @@
                         <li><a href="#" class="active">Get a quote</a></li>
                         <li><a href="about.html">About us</a></li>
                         <li><a href="contact.html">Contact us</a></li>
-                        <li class="info"><span>Toll Free: 1-866-263-8457</span></li>
                     </ul>
                 </div>
             </nav>
@@ -101,24 +96,32 @@
             </section>
             <footer>
                 <div class="centrador">
-                    <div id="contacto">
-                        <h4><span>Contact</span> information</h4>
+                    <div class="contacto">
+                        <p><b>
+                        <a href="#" class="active">Home</a><br/>
+                        <a href="products.html">Products</a><br/>
+                        <a href="quote.html">Get a quote</a><br/>
+                        <a href="about.html">About us</a><br/>
+                        <a href="contact.html">Contact us</a></b></p>
                     </div>
                     <div class="contacto">
-                        <p><b>Address:</b><br>
+                        <div></div>
+                        <p>Address:<br>
                         12601 N.W. 115th AVE<br>
                         BLDG. A, UNIT 114<br>
                         MEDLEY, FL 33178</p>
                     </div>
                     <div class="contacto">
-                        <p><b>Phone:</b> (305) 822-4077<br>
-                        <b>Fax:</b> (305) 489-0289<br>
-                        <b>Toll Free:</b> 1-866-263-8457</p>
+                        <div></div>
+                        <p>Phone: (305) 822-4077<br>
+                        Fax: (305) 489-0289<br>
+                        Toll Free: 1-866-263-8457</p>
                     </div>
                     <div class="contacto">
-                        <p><b>General info:</b> <a href="mailto:info@hightech-ndt.com" target="_blank">info@hightech-ndt.com</a><br>
-                        <b>Sales:</b> <a href="mailto:sales@hightech-ndt.com" target="_blank">sales@hightech-ndt.com</a><br>
-                            <b>Support:</b> <a href="mailto:support@hightech-ndt.com" target="_blank">support@hightech-ndt.com</a></p>
+                        <div></div>
+                        <p>General info: <a href="mailto:info@hightech-ndt.com" target="_blank">info@hightech-ndt.com</a><br>
+                        Sales: <a href="mailto:sales@hightech-ndt.com" target="_blank">sales@hightech-ndt.com</a><br>
+                        Support: <a href="mailto:support@hightech-ndt.com" target="_blank">support@hightech-ndt.com</a></p>
                     </div>
                 </div>
             </footer>
