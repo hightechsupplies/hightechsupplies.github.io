@@ -20,47 +20,6 @@ body
     margin:0px auto;
 }
 
-/*
-#barra-idioma
-{
-    background: #3E3E3E;
-    height:22px;
-    padding:0px 20px;
-    border-bottom: 3px solid #191919;
-}
-
-#barra-idioma .region
-{   float:left;}
-
-#barra-idioma .idiomas
-{   float:right;}
-
-#barra-idioma a
-{
-    text-decoration: none;
-    color:#ddd;
-    margin-right: 25px;
-}
-
-#barra-idioma a:hover
-{
-    text-shadow: 0px 0px 1px #eee;
-}
-
-header
-{
-	box-shadow:none;
-    background: linear-gradient(#222,black);
-    padding:5px 20px;
-}
-
-header > div
-{
-    width:400px;
-    overflow:hidden;
-}
-*/
-
 header
 {
     background: #3E3E3E;
@@ -261,4 +220,15 @@ footer .contacto a
 footer .contacto a:hover
 {
     color: #A2D5F9;
+}
+
+.line
+{
+    height:2px;
+    background:linear-gradient(to right, #333,#eee);
+}
+
+.legend
+{
+    font-size: 18px;
 }
