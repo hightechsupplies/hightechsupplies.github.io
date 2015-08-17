@@ -1,3 +1,22 @@
+<?php
+    session_start();
+    if(!empty($_GET["lan"]))
+    {
+        if($_GET["lan"] == "es" || $_GET["lan"] == "en")
+        $_SESSION["lan"] = $_GET["lan"];
+    }
+
+    if($_SESSION["lan"] == "en")
+    {
+        $menu = array( "Home","Products","Get a quote","About us","Contact us");
+    }
+
+    if($_SESSION["lan"] == "es") 
+    {
+        $menu = array( "Inicio","Productos","Cotizar","Nosotros","Contacto");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,44 +32,39 @@
     <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/product.js"></script>
 	</head>
 	<body ng-app="hightech">
         <a id="top"></a>
         <div id="contenedor">
-            <div id="barra-idioma">
+            <header>
                 <div class="centrador">
                     <div class="region">
                         <a href="index.html">Select Region</a>
                     </div>
                     <div class="idiomas">
-                        <img src="imagenes/us.gif"><a href="#">English</a>
-                        <img src="imagenes/es.gif"><a href="#">Español</a>
+                        <a href="?lan=en">English</a>
+                        <a href="?lan=es">Español</a>
                     </div>
-                </div>
-            </div>
-            <header>
-                <div class="centrador">
-                    <a href="home.html"><img id="logo" src="imagenes/logo.png"></a>
                 </div>
             </header>
             <nav>
-                <div>
-                    <ul class="nav centrador">
-                        <li><a href="home.html">Home</a></li>
+                <div class="centrador">
+                    <a href="home.php" class="logo"><img id="logo" src="imagenes/logon.png"></a>
+                    <ul class="nav ">
+                        <li><a href="home.php">Home</a></li>
                         <li class="dropdown">
                           <a href="#" class="active">Products<span class="caret"></span></a>
                           <ul class="dropdown-menu menu" menu></ul>
                         </li>
-                        <li><a href="quote.html">Get a quote</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
-                        <li class="info">
-                            <div class="input-group buscador">
-                                <input type="text"  class="form-control input-buscador" name="finicial">
-                                <span class="input-group-addon"><img src="imagenes/search.png"></span>
-                            </div>
-                        </li>
+                        <li><a href="quote.php">Get a quote</a></li>
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
                     </ul>
+                    <div class="input-group buscador">
+                        <input type="text"  class="form-control input-buscador" name="finicial">
+                        <span class="input-group-addon"><img src="imagenes/search.png"></span>
+                    </div>
                 </div>
             </nav>
             <section>
@@ -61,7 +75,7 @@
                     </div>
                     <div class="product">
                         <div class="cont-imgs">
-                            <div class="cont-img-small">
+                            <div class="cont-img-small active">
                                 <img class="image" src="fotos/00c636e00bee0ba03b364841363f738b.jpg"/>
                             </div>
                             <div class="cont-img-small">
@@ -190,11 +204,11 @@
                 <div class="centrador">
                     <div class="contacto">
                         <p><b>
-                        <a href="#" class="active">Home</a><br/>
-                        <a href="products.html">Products</a><br/>
-                        <a href="quote.html">Get a quote</a><br/>
-                        <a href="about.html">About us</a><br/>
-                        <a href="contact.html">Contact us</a></b></p>
+                        <a href="home.php">Home</a><br/>
+                        <a href="products.php">Products</a><br/>
+                        <a href="quote.php">Get a quote</a><br/>
+                        <a href="about.php">About us</a><br/>
+                        <a href="contact.php">Contact us</a></b></p>
                     </div>
                     <div class="contacto">
                         <div></div>

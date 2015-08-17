@@ -1,3 +1,22 @@
+<?php
+    session_start();
+    if(!empty($_GET["lan"]))
+    {
+        if($_GET["lan"] == "es" || $_GET["lan"] == "en")
+        $_SESSION["lan"] = $_GET["lan"];
+    }
+
+    if($_SESSION["lan"] == "en")
+    {
+        $menu = array( "Home","Products","Get a quote","About us","Contact us");
+    }
+
+    if($_SESSION["lan"] == "es") 
+    {
+        $menu = array( "Inicio","Productos","Cotizar","Nosotros","Contacto");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,8 +41,8 @@
                         <a href="index.html">Select Region</a>
                     </div>
                     <div class="idiomas">
-                        <a href="#">English</a>
-                        <a href="#">Español</a>
+                        <a href="?lan=en">English</a>
+                        <a href="?lan=es">Español</a>
                     </div>
                 </div>
             </header>
@@ -33,12 +52,12 @@
                     <ul class="nav ">
                         <li><a href="#" class="active">Home</a></li>
                         <li class="dropdown">
-                          <a href="products.html">Products<span class="caret"></span></a>
+                          <a href="products.php">Products<span class="caret"></span></a>
                           <ul class="dropdown-menu menu" menu></ul>
                         </li>
-                        <li><a href="quote.html">Get a quote</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="quote.php">Get a quote</a></li>
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -53,15 +72,15 @@
                             <h3>Check our best selling products</h3>
                             <div class="line"></div>
                         </div>
-                        <div class="products"><a href="products.html">
+                        <div class="products"><a href="products.php">
                             <img src="imagenes/medidor.png">
                             <p>Non Destructive Testing</p>
                         </a></div>
-                        <div class="products"><a href="products.html">
+                        <div class="products"><a href="products.php">
                             <img src="imagenes/casco.png">
                             <p>Welding</p>
                         </a></div>
-                        <div class="products"><a href="products.html">
+                        <div class="products"><a href="products.php">
                             <img src="imagenes/casco2.png">
                             <p>Industrial Safety Products</p>
                         </a></div>
@@ -72,11 +91,11 @@
                 <div class="centrador">
                     <div class="contacto">
                         <p><b>
-                        <a href="#" class="active">Home</a><br/>
-                        <a href="products.html">Products</a><br/>
-                        <a href="quote.html">Get a quote</a><br/>
-                        <a href="about.html">About us</a><br/>
-                        <a href="contact.html">Contact us</a></b></p>
+                        <a href="#">Home</a><br/>
+                        <a href="products.php">Products</a><br/>
+                        <a href="quote.php">Get a quote</a><br/>
+                        <a href="about.php">About us</a><br/>
+                        <a href="contact.php">Contact us</a></b></p>
                     </div>
                     <div class="contacto">
                         <div></div>

@@ -57,6 +57,17 @@
     text-align: center;
     border: 1px solid #ddd;
     display:inline-block;
+    cursor:pointer;
+}
+
+.cont-img-small:hover
+{
+    box-shadow: 0px 0px 1px #333;
+}
+
+div.active
+{
+    border: 1px solid #666;
 }
 
 .cont-img-big
@@ -73,7 +84,7 @@
 .image
 {
     max-width:100%;
-    height:auto;
+    height:100%;
 }
 
 .cont-info

@@ -1,3 +1,22 @@
+<?php
+    session_start();
+    if(!empty($_GET["lan"]))
+    {
+        if($_GET["lan"] == "es" || $_GET["lan"] == "en")
+        $_SESSION["lan"] = $_GET["lan"];
+    }
+
+    if($_SESSION["lan"] == "en")
+    {
+        $menu = array( "Home","Products","Get a quote","About us","Contact us");
+    }
+
+    if($_SESSION["lan"] == "es") 
+    {
+        $menu = array( "Inicio","Productos","Cotizar","Nosotros","Contacto");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -21,23 +40,23 @@
                         <a href="index.html">Select Region</a>
                     </div>
                     <div class="idiomas">
-                        <a href="#">English</a>
-                        <a href="#">Español</a>
+                        <a href="?lan=en">English</a>
+                        <a href="?lan=es">Español</a>
                     </div>
                 </div>
             </header>
             <nav>
                 <div class="centrador">
-                    <a href="home.html" class="logo"><img id="logo" src="imagenes/logon.png"></a>
+                    <a href="home.php" class="logo"><img id="logo" src="imagenes/logon.png"></a>
                     <ul class="nav ">
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.php">Home</a></li>
                         <li class="dropdown">
-                          <a href="products.html">Products<span class="caret"></span></a>
+                          <a href="products.php">Products<span class="caret"></span></a>
                           <ul class="dropdown-menu menu" menu></ul>
                         </li>
                         <li><a href="#" class="active">Get a quote</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -101,11 +120,11 @@
                 <div class="centrador">
                     <div class="contacto">
                         <p><b>
-                        <a href="#" class="active">Home</a><br/>
-                        <a href="products.html">Products</a><br/>
-                        <a href="quote.html">Get a quote</a><br/>
-                        <a href="about.html">About us</a><br/>
-                        <a href="contact.html">Contact us</a></b></p>
+                        <a href="home.php">Home</a><br/>
+                        <a href="products.php">Products</a><br/>
+                        <a href="#">Get a quote</a><br/>
+                        <a href="about.php">About us</a><br/>
+                        <a href="contact.php">Contact us</a></b></p>
                     </div>
                     <div class="contacto">
                         <div></div>
